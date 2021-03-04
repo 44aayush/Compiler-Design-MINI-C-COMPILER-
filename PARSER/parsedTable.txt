@@ -1,0 +1,25 @@
+
+				SymbolTable
+
+		Token			Type							LineNumber
+
+              struct                       Keyword                                                        4 12
+                   {                    Punctuator                                                      4 7 11
+                 int                       Keyword                                                      5 8 11
+                data                    Identifier                                                        5 14
+                   ;                    Punctuator                                         5 6 8 9 12 13 14 15
+                   }                    Punctuator                                                      6 9 16
+               union                       Keyword                                                           7
+                   w                    Identifier                                                           8
+                main                    Identifier                                                          11
+                   (                    Punctuator                                                    11 13 14
+                   )                    Punctuator                                                    11 13 14
+                   x                    Identifier                                                       12 14
+              printf                    Identifier                                                          13
+"\nEnjter Number : "                String Literal                                                          13
+               scanf                    Identifier                                                          14
+                "%d"                String Literal                                                          14
+                   &                      Operator                                                          14
+                   ,                    Punctuator                                                          14
+                   1                      Constant                                                          15
+              return                       Keyword                                                          15

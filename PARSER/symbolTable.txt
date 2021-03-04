@@ -1,0 +1,11 @@
+
+				SymbolTable
+
+		Token							Attributes
+
+                data                    Identifier                                                        5 14
+                   w                    Identifier                                                           8
+                main                    Identifier                                                          11
+                   x                    Identifier                                                       12 14
+              printf                    Identifier                                                          13
+               scanf                    Identifier                                                          14
