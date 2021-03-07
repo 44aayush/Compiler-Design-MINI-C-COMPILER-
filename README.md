@@ -19,3 +19,6 @@ This is Mini-C-Compiler project done during SEM 6.
 - Shift Reduce, Reduce Reduce Error correction (Done)
 - Valid Actions for grammar productions (Done)
 - Error Handing and Error Recovery (Done)
+
+# Phase 3 - Semantic Analysis (Pending Review 2)
+# Phase 4 - Intermediate Code Generator (Pending Review 2)
