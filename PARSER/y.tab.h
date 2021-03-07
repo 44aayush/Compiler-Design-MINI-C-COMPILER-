@@ -1,4 +1,4 @@
-/* A Bison parser, made by GNU Bison 3.7.  */
+/* A Bison parser, made by GNU Bison 3.5.1.  */
 
 /* Bison interface for Yacc-like parsers in C
 
@@ -31,9 +31,8 @@
    This special exception was added by the Free Software Foundation in
    version 2.2 of Bison.  */
 
-/* DO NOT RELY ON FEATURES THAT ARE NOT DOCUMENTED in the manual,
-   especially those whose name start with YY_ or yy_.  They are
-   private implementation details that can be changed or removed.  */
+/* Undocumented macros, especially those whose name start with YY_,
+   are private implementation details.  Do not rely on them.  */
 
 #ifndef YY_YY_Y_TAB_H_INCLUDED
 # define YY_YY_Y_TAB_H_INCLUDED
@@ -45,138 +44,114 @@
 extern int yydebug;
 #endif
 
-/* Token kinds.  */
+/* Token type.  */
 #ifndef YYTOKENTYPE
 # define YYTOKENTYPE
   enum yytokentype
   {
-    YYEMPTY = -2,
-    YYEOF = 0,                     /* "end of file"  */
-    YYerror = 256,                 /* error  */
-    YYUNDEF = 257,                 /* "invalid token"  */
-    AUTO = 258,                    /* AUTO  */
-    BREAK = 259,                   /* BREAK  */
-    CASE = 260,                    /* CASE  */
-    CHAR = 261,                    /* CHAR  */
-    CONST = 262,                   /* CONST  */
-    CONTINUE = 263,                /* CONTINUE  */
-    DEFAULT = 264,                 /* DEFAULT  */
-    DO = 265,                      /* DO  */
-    DOUBLE = 266,                  /* DOUBLE  */
-    ENUM = 267,                    /* ENUM  */
-    EXTERN = 268,                  /* EXTERN  */
-    FLOAT = 269,                   /* FLOAT  */
-    FOR = 270,                     /* FOR  */
-    GOTO = 271,                    /* GOTO  */
-    INT = 272,                     /* INT  */
-    LONG = 273,                    /* LONG  */
-    REGISTER = 274,                /* REGISTER  */
-    RETURN = 275,                  /* RETURN  */
-    SHORT = 276,                   /* SHORT  */
-    SIGNED = 277,                  /* SIGNED  */
-    SIZEOF = 278,                  /* SIZEOF  */
-    STATIC = 279,                  /* STATIC  */
-    STRUCT = 280,                  /* STRUCT  */
-    SWITCH = 281,                  /* SWITCH  */
-    TYPEDEF = 282,                 /* TYPEDEF  */
-    UNION = 283,                   /* UNION  */
-    UNSIGNED = 284,                /* UNSIGNED  */
-    VOID = 285,                    /* VOID  */
-    VOLATILE = 286,                /* VOLATILE  */
-    WHILE = 287,                   /* WHILE  */
-    IDENTIFIER = 288,              /* IDENTIFIER  */
-    CONSTANT = 289,                /* CONSTANT  */
-    STRING_LITERAL = 290,          /* STRING_LITERAL  */
-    ELLIPSIS = 291,                /* ELLIPSIS  */
-    PTR_OP = 292,                  /* PTR_OP  */
-    INC_OP = 293,                  /* INC_OP  */
-    DEC_OP = 294,                  /* DEC_OP  */
-    LEFT_OP = 295,                 /* LEFT_OP  */
-    RIGHT_OP = 296,                /* RIGHT_OP  */
-    LE_OP = 297,                   /* LE_OP  */
-    GE_OP = 298,                   /* GE_OP  */
-    EQ_OP = 299,                   /* EQ_OP  */
-    NE_OP = 300,                   /* NE_OP  */
-    AND_OP = 301,                  /* AND_OP  */
-    OR_OP = 302,                   /* OR_OP  */
-    MUL_ASSIGN = 303,              /* MUL_ASSIGN  */
-    DIV_ASSIGN = 304,              /* DIV_ASSIGN  */
-    MOD_ASSIGN = 305,              /* MOD_ASSIGN  */
-    ADD_ASSIGN = 306,              /* ADD_ASSIGN  */
-    SUB_ASSIGN = 307,              /* SUB_ASSIGN  */
-    LEFT_ASSIGN = 308,             /* LEFT_ASSIGN  */
-    RIGHT_ASSIGN = 309,            /* RIGHT_ASSIGN  */
-    AND_ASSIGN = 310,              /* AND_ASSIGN  */
-    XOR_ASSIGN = 311,              /* XOR_ASSIGN  */
-    OR_ASSIGN = 312,               /* OR_ASSIGN  */
-    TYPE_NAME = 313,               /* TYPE_NAME  */
-    LOWER_THAN_ELSE = 314,         /* LOWER_THAN_ELSE  */
-    ELSE = 315                     /* ELSE  */
+    INT = 258,
+    CHAR = 259,
+    FLOAT = 260,
+    DOUBLE = 261,
+    STRUCT = 262,
+    UNION = 263,
+    RETURN = 264,
+    MAIN = 265,
+    VOID = 266,
+    WHILE = 267,
+    DO = 268,
+    identifier = 269,
+    integer_constant = 270,
+    string_constant = 271,
+    float_constant = 272,
+    character_constant = 273,
+    leftshift_assignment_operator = 274,
+    rightshift_assignment_operator = 275,
+    XOR_assignment_operator = 276,
+    OR_assignment_operator = 277,
+    AND_assignment_operator = 278,
+    modulo_assignment_operator = 279,
+    multiplication_assignment_operator = 280,
+    division_assignment_operator = 281,
+    addition_assignment_operator = 282,
+    subtraction_assignment_operator = 283,
+    assignment_operator = 284,
+    OR_operator = 285,
+    AND_operator = 286,
+    pipe_operator = 287,
+    caret_operator = 288,
+    amp_operator = 289,
+    equality_operator = 290,
+    inequality_operator = 291,
+    lessthan_assignment_operator = 292,
+    lessthan_operator = 293,
+    greaterthan_assignment_operator = 294,
+    greaterthan_operator = 295,
+    leftshift_operator = 296,
+    rightshift_operator = 297,
+    add_operator = 298,
+    subtract_operator = 299,
+    multiplication_operator = 300,
+    division_operator = 301,
+    modulo_operator = 302,
+    SIZEOF = 303,
+    tilde_operator = 304,
+    exclamation_operator = 305,
+    increment_operator = 306,
+    decrement_operator = 307
   };
-  typedef enum yytokentype yytoken_kind_t;
 #endif
-/* Token kinds.  */
-#define YYEOF 0
-#define YYerror 256
-#define YYUNDEF 257
-#define AUTO 258
-#define BREAK 259
-#define CASE 260
-#define CHAR 261
-#define CONST 262
-#define CONTINUE 263
-#define DEFAULT 264
-#define DO 265
-#define DOUBLE 266
-#define ENUM 267
-#define EXTERN 268
-#define FLOAT 269
-#define FOR 270
-#define GOTO 271
-#define INT 272
-#define LONG 273
-#define REGISTER 274
-#define RETURN 275
-#define SHORT 276
-#define SIGNED 277
-#define SIZEOF 278
-#define STATIC 279
-#define STRUCT 280
-#define SWITCH 281
-#define TYPEDEF 282
-#define UNION 283
-#define UNSIGNED 284
-#define VOID 285
-#define VOLATILE 286
-#define WHILE 287
-#define IDENTIFIER 288
-#define CONSTANT 289
-#define STRING_LITERAL 290
-#define ELLIPSIS 291
-#define PTR_OP 292
-#define INC_OP 293
-#define DEC_OP 294
-#define LEFT_OP 295
-#define RIGHT_OP 296
-#define LE_OP 297
-#define GE_OP 298
-#define EQ_OP 299
-#define NE_OP 300
-#define AND_OP 301
-#define OR_OP 302
-#define MUL_ASSIGN 303
-#define DIV_ASSIGN 304
-#define MOD_ASSIGN 305
-#define ADD_ASSIGN 306
-#define SUB_ASSIGN 307
-#define LEFT_ASSIGN 308
-#define RIGHT_ASSIGN 309
-#define AND_ASSIGN 310
-#define XOR_ASSIGN 311
-#define OR_ASSIGN 312
-#define TYPE_NAME 313
-#define LOWER_THAN_ELSE 314
-#define ELSE 315
+/* Tokens.  */
+#define INT 258
+#define CHAR 259
+#define FLOAT 260
+#define DOUBLE 261
+#define STRUCT 262
+#define UNION 263
+#define RETURN 264
+#define MAIN 265
+#define VOID 266
+#define WHILE 267
+#define DO 268
+#define identifier 269
+#define integer_constant 270
+#define string_constant 271
+#define float_constant 272
+#define character_constant 273
+#define leftshift_assignment_operator 274
+#define rightshift_assignment_operator 275
+#define XOR_assignment_operator 276
+#define OR_assignment_operator 277
+#define AND_assignment_operator 278
+#define modulo_assignment_operator 279
+#define multiplication_assignment_operator 280
+#define division_assignment_operator 281
+#define addition_assignment_operator 282
+#define subtraction_assignment_operator 283
+#define assignment_operator 284
+#define OR_operator 285
+#define AND_operator 286
+#define pipe_operator 287
+#define caret_operator 288
+#define amp_operator 289
+#define equality_operator 290
+#define inequality_operator 291
+#define lessthan_assignment_operator 292
+#define lessthan_operator 293
+#define greaterthan_assignment_operator 294
+#define greaterthan_operator 295
+#define leftshift_operator 296
+#define rightshift_operator 297
+#define add_operator 298
+#define subtract_operator 299
+#define multiplication_operator 300
+#define division_operator 301
+#define modulo_operator 302
+#define SIZEOF 303
+#define tilde_operator 304
+#define exclamation_operator 305
+#define increment_operator 306
+#define decrement_operator 307
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED

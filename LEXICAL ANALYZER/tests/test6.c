@@ -5,7 +5,7 @@ struct student{
 	int a;
 	char c;
 };
-union teacher{
+union teache{
 	int q;
 	int p;
 }

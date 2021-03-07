@@ -1,8 +1,0 @@
-
- Constants Table:
- 		Lexeme			Type			Attribute Value			Line Number
-
-                   1                 int                             9                                  7
-                   1                 int                             9                                 12
-                   5                 int                            19                                 14
-                   0                 int                            21                                 16
