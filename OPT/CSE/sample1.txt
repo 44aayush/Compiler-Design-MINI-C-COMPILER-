@@ -1,0 +1,12 @@
+i=0
+t1=a+b
+t2=i<5
+a=10
+t3=a+b
+t4=a+b
+L1: if t1 goto L2
+t4=i+1
+i=t4
+goto L1
+L2: i=10
+

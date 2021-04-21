@@ -1,0 +1,17 @@
+For Symbol Table:
+yacc -d SymbolTable.y
+lex -w SymbolTable.l
+gcc -g y.tab.c lex.yy.c -ll -o SymbolTable
+SymbolTable<all_cases_final.c
+
+For AST:
+yacc -d AST.y
+lex -w AST.l
+gcc -Wall -fno-stack-protector -g -w y.tab.c lex.yy.c graph.c -ll -o AST
+./AST<all_cases_AST.c
+
+For ICG
+yacc -d ICG.y
+lex -w ICG.l
+gcc -Wall -fno-stack-protector -g -w y.tab.c lex.yy.c -ll -o ICG
+./ICG<all_cases_final.c
