@@ -35,16 +35,16 @@ This is Mini-C-Compiler project - SEM 6.
 # Phase 4 - Intermediate Code Generator
 
 - Generate three address code (Done)
-- Quadruple format (Done)
-- Insert Temporaries to Symbol Table (Done)
+- Quadruple format
+- Insert Temporaries to Symbol Table
 
 # Phase 5 - Intermediate Code Optimization
 
 - Eliminate dead code (Done)
 - Subexpression elimination (Done)
 - Constant Folding, Propagation (Done)
-- Loop Invariant code outside loop (Done)
-- live Variable Analysis (Done)
+- Loop Invariant code outside loop 
+- live Variable Analysis 
 
 # Execution Steps
 
