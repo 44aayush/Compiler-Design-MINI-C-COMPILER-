@@ -1,6 +1,6 @@
 # Compiler-Design
 
-This is Mini-C-Compiler project done during SEM 6.
+This is Mini-C-Compiler project - SEM 6.
 
 # Phase 1 - Lexer/Lexical Analysis
 
@@ -45,10 +45,6 @@ This is Mini-C-Compiler project done during SEM 6.
 - Constant Folding, Propagation (Done)
 - Loop Invariant code outside loop (Done)
 - live Variable Analysis (Done)
-
-# Phase 6 - Target Code Generation
-
-- Assembly Code (Done)
 
 # Execution Steps
 
