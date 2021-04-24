@@ -1,5 +1,0 @@
-For ICG
-yacc -d ICG.y
-lex -w ICG.l
-gcc -Wall -fno-stack-protector -g -w y.tab.c lex.yy.c -ll -o ICG
-./ICG<all_cases_final.c

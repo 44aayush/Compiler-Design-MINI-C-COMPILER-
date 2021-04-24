@@ -152,12 +152,13 @@ extern int yydebug;
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 union YYSTYPE
 {
-#line 37 "ICG.y"
+#line 38 "AST.y"
 
-    int ival;
+	int ival;
+	nodeType *nPtr;
 	char string[128];
 
-#line 161 "y.tab.h"
+#line 162 "y.tab.h"
 
 };
 typedef union YYSTYPE YYSTYPE;
